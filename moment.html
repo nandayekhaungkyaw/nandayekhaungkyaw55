@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ANIMATION/animate.css">
+    <style>
+       body{
+           background-color: #b8c1f0;
+       }
+        .phoo{
+            width: 200px;height: 140px;
+            margin: 12px;
+            background-color: rgb(34, 31, 31);
+
+        }
+        .main{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+        audio{
+            width: 100px;
+            height: 30px;
+            display: none;
+            
+            margin: auto;
+        }
+        .mp3{
+            display: flex;
+            margin: 20px;
+        }
+        .heading{
+            display: inline-block;
+            margin:2px auto;
+            background-color: rgb(34, 31, 31);
+            color: #c2fbd7;
+
+        }
+        .gif{
+            width: 100px;
+            height: 100px;
+            display: none;
+            border-radius: 12px;
+            animation: wobble 2s 0s alternate infinite;
+        }
+        .voice{
+            width: 60px;
+            height: 25px;
+            border-radius: 10%;
+
+        }
+       
+
+
+.glow-on-hover {
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 50%;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  margin: 12px auto;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 6px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.home{
+    width: 40px;
+    height: 20px;
+    display: flex;
+}
+.saya{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vid{
+    display: flex;
+    width: 400px;
+    height:350px;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    background-color: rgb(34, 31, 31);
+
+    
+    
+}
+.video{
+    width: 300px;
+    height: 250px;
+    
+}
+
+       
+        
+        @media  screen and (max-width:500px) {
+            .main{
+                display: inline-block;
+               
+            }
+            .phoo{
+                filter:blur(3px);
+            }
+            .phoo:hover{
+                filter: blur(0px);
+            }
+            .duck{
+            display: inline-block;}
+            
+        }
+    </style>
+</head>
+<body><div class="saya">
+    <button class="button-33" role="button"> <a href="crush.html"> <H1 class="home"> HOme</H1> </a></button>
+    <h1 class="heading">Sweet MOments</h1>
+</div>
+<div class="mp3">
+    <button class="glow-on-hover " onclick="duck()"  type="button">CLICK ME!</button>
+
+    
+    <audio controls >
+        <source   src="../../../photo/phoo/phoo❣️.m4a" type="audio/ogg">
+        
+    </audio>
+    <img src="../../../photo/girl/duck.gif" class="gif" alt="">
+</div >
+<div class="main">
+    <img src="../../../photo/phoo/received_473508967640871.jpeg" alt="" class="phoo">
+    <img src="../../../photo/phoo/received_920170538646512.gif" alt="" class="phoo">
+</div>
+<div class="vid">
+    <video src="../../../photo/phoo/PicsArt_03-29-06.07.10.mp4" controls class="video"></video>
+    <video src="../../../photo/phoo/PicsArt_03-29-06.08.56.mp4" controls class="video"></video>
+</div>
+   
+
+<script>
+    let giff=document.querySelector(".gif")
+    let audio=document.querySelector("audio")
+    function duck(){
+        giff.classList.toggle("duck");
+        audio.play();
+        
+        
+
+    }
+   
+</script>
+
+</body>
+</html>

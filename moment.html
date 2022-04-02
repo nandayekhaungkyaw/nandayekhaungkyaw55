@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ANIMATION/animate.css">
+    <link rel="stylesheet" href="animate.css">
     <style>
        body{
            background-color: #b8c1f0;
@@ -203,7 +203,7 @@
 </div>
 <div class="mp3">
     <button class="glow-on-hover " onclick="duck()"  type="button">CLICK ME!</button>
-
+      
     
     <audio controls >
         <source   src="../girl/phoo❣️.m4a" type="audio/ogg">
@@ -226,7 +226,15 @@
     let audio=document.querySelector("audio")
     function duck(){
         giff.classList.toggle("duck");
-        audio.play();
+        audio.play();}
+      function stop(){
+            giff.classList.toggle("duck");
+            audio.pause()
+        
+        
+
+    }
+
         
         
 

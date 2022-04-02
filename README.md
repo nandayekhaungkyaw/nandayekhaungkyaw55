@@ -195,7 +195,7 @@
 
     
         <img src="../girl/received_473508967640871.jpeg" class="photo1" alt="">
-        <button class="button" onclick="show()"><img src="arrow-down-circle" class="main"></button>
+        <button class="button" onclick="show()"><img src="arrow-down-circle.svg" class="main"></button>
       <ul class="parent">
           
 

@@ -195,7 +195,7 @@
 
     
         <img src="../girl/received_473508967640871.jpeg" class="photo1" alt="">
-        <button class="button" onclick="show()"><img src="arrow-down-circle.svg" class="main"></button>
+        <button class="button" onclick="show()"><img src="arrow-down-circle.svg" class="menu"></button>
       <ul class="parent">
           
 
@@ -210,13 +210,13 @@
   
  
 </div>
-<img src="feather/heart.svg" class="heart" alt="">
+
 
 
 
 
    <script>
-        feather.replace()
+       
        let photo1=document.querySelector(".photo1")
  let control=document.querySelector(".parent")
   function show() {

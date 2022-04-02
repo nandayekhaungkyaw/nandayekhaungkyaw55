@@ -193,7 +193,7 @@
     <div class="main">
 
     
-        <img src="girl/received_473508967640871.jpeg" class="photo1" alt="">
+        <img src="../girl/received_473508967640871.jpeg" class="photo1" alt="">
         <button class="button" onclick="show()"><img src="feather/coffee.svg" class="menu" alt=""></button>
       <ul class="parent">
           

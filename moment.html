@@ -161,19 +161,20 @@
 .vid{
     display: flex;
     width: 400px;
-    height:350px;
-    scroll-behavior: smooth;
-    overflow: scroll;
+    height:fit-content;
+    
+   
     flex-wrap: wrap;
     align-items: center;
     margin: 20px auto;
-    background-color: rgb(34, 31, 31);
+   
 
     
     
 }
 .video{
     width: 300px;
+    margin:20px auto;
     height: 250px;
     
 }
@@ -203,6 +204,7 @@
 </div>
 <div class="mp3">
     <button class="glow-on-hover " onclick="duck()"  type="button">CLICK ME!</button>
+    <button class="glow-on-hover " onclick="stop();"  type="button">paused ME!</button>
       
     
     <audio controls >
